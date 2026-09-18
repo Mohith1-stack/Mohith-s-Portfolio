@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs><radialGradient id="v" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#0e141c"/><stop offset="1" stop-color="#05070a"/></radialGradient>
+<pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#111821" stroke-width="1"/></pattern></defs>
+<rect width="1600" height="1000" fill="url(#v)"/><rect width="1600" height="1000" fill="url(#g)"/>
+<rect x="70" y="200" width="300" height="120" fill="#0a0e13" stroke="#ece6da" stroke-width="1.5"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" letter-spacing="3" fill="#ece6da" x="220" y="266" text-anchor="middle">CLIENT</text>
+<rect x="470" y="200" width="300" height="120" fill="#0a0e13" stroke="#6cd3e0" stroke-width="1.5"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" letter-spacing="3" fill="#6cd3e0" x="620" y="266" text-anchor="middle">ESCROW</text>
+<rect x="870" y="200" width="300" height="120" fill="#0a0e13" stroke="#5cc39b" stroke-width="1.5"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" letter-spacing="3" fill="#5cc39b" x="1020" y="266" text-anchor="middle">FREELANCER WALLET</text>
+<path d="M370 260H470" stroke="#ece6da" stroke-width="2"/><path d="M458 252L470 260L458 268" fill="none" stroke="#ece6da" stroke-width="2"/>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" letter-spacing="2" fill="#7d858f" x="420.0" y="236" text-anchor="middle">ORDER PLACED</text>
+<path d="M770 260H870" stroke="#ece6da" stroke-width="2"/><path d="M858 252L870 260L858 268" fill="none" stroke="#ece6da" stroke-width="2"/>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" letter-spacing="2" fill="#7d858f" x="820.0" y="236" text-anchor="middle">WORK APPROVED</text>
+<path d="M620 320V390H220V320" fill="none" stroke="#e2584c" stroke-dasharray="6 8"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" letter-spacing="2" fill="#e2584c" x="420" y="418" text-anchor="middle">DISPUTE → REFUND</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="2" fill="#7d858f" x="70" y="120">ESCROW LEDGER</text>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2"><text x="70" y="500" fill="#7d858f">TXN</text><text x="250" y="500" fill="#7d858f">DEBIT</text><text x="430" y="500" fill="#7d858f">CREDIT</text><text x="630" y="500" fill="#7d858f">STATE</text>
+<path d="M70 566H770" stroke="#161d26"/><text x="70" y="550" fill="#ece6da">#1042</text><text x="250" y="550" fill="#ece6da">CLIENT</text><text x="430" y="550" fill="#ece6da">ESCROW</text><text x="630" y="550" fill="#6cd3e0">HELD</text>
+<path d="M70 612H770" stroke="#161d26"/><text x="70" y="596" fill="#ece6da">#1043</text><text x="250" y="596" fill="#ece6da">ESCROW</text><text x="430" y="596" fill="#ece6da">WALLET</text><text x="630" y="596" fill="#5cc39b">RELEASED</text>
+<path d="M70 658H770" stroke="#161d26"/><text x="70" y="642" fill="#ece6da">#1044</text><text x="250" y="642" fill="#ece6da">ESCROW</text><text x="430" y="642" fill="#ece6da">CLIENT</text><text x="630" y="642" fill="#e2584c">REFUNDED</text>
+<path d="M70 704H770" stroke="#161d26"/><text x="70" y="688" fill="#ece6da">#1045</text><text x="250" y="688" fill="#ece6da">CLIENT</text><text x="430" y="688" fill="#ece6da">ESCROW</text><text x="630" y="688" fill="#6cd3e0">HELD</text>
+</g>
+<circle cx="1360" cy="300" r="120" fill="none" stroke="#1a222c" stroke-width="14"/>
+<path d="M1360 180 A120 120 0 1 1 1242.1 277.5" fill="none" stroke="#6cd3e0" stroke-width="14"/>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="2" fill="#7d858f" x="1360" y="290" text-anchor="middle">ATS MATCH</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="2" fill="#7d858f" x="1360" y="322" text-anchor="middle">SCORE /100</text>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2"><text x="1240" y="470" fill="#7d858f">MISSING SKILLS</text><text x="1240" y="500" fill="#e2584c">— DOCKER</text><text x="1240" y="528" fill="#e2584c">— REST TESTING</text></g>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="2" fill="#7d858f" x="880" y="560">ROOM · SOCKET.IO</text>
+<rect x="880" y="594" width="360" height="48" rx="4" fill="#ece6da" fill-opacity="0.08" stroke="#ece6da" stroke-opacity="0.5"/>
+<rect x="902" y="608" width="300" height="3" fill="#ece6da" opacity="0.5"/>
+<rect x="902" y="616" width="216" height="3" fill="#ece6da" opacity="0.5"/>
+<rect x="902" y="624" width="132" height="3" fill="#ece6da" opacity="0.5"/>
+<rect x="1220" y="664" width="300" height="48" rx="4" fill="#6cd3e0" fill-opacity="0.12" stroke="#6cd3e0" stroke-opacity="0.5"/>
+<rect x="1242" y="678" width="240" height="3" fill="#6cd3e0" opacity="0.5"/>
+<rect x="1242" y="686" width="173" height="3" fill="#6cd3e0" opacity="0.5"/>
+<rect x="1242" y="694" width="106" height="3" fill="#6cd3e0" opacity="0.5"/>
+<rect x="880" y="734" width="240" height="48" rx="4" fill="#ece6da" fill-opacity="0.08" stroke="#ece6da" stroke-opacity="0.5"/>
+<rect x="902" y="748" width="180" height="3" fill="#ece6da" opacity="0.5"/>
+<rect x="902" y="756" width="130" height="3" fill="#ece6da" opacity="0.5"/>
+<rect x="902" y="764" width="79" height="3" fill="#ece6da" opacity="0.5"/>
+<g fill="#7d858f"><circle cx="898" cy="816" r="4"/><circle cx="914" cy="816" r="4" opacity="0.6"/><circle cx="930" cy="816" r="4" opacity="0.3"/></g><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" letter-spacing="2" fill="#7d858f" x="952" y="821">TYPING</text>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" fill="#7d858f" letter-spacing="3"><text x="64" y="944">BUILD/04  ESCROW MARKETPLACE</text><text x="1536" y="944" text-anchor="end">FIG. 03.4</text></g>
+<path d="M64 908H1536" stroke="#1c242e"/>
+</svg>

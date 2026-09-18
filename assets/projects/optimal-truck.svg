@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs><radialGradient id="v" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#0e141c"/><stop offset="1" stop-color="#05070a"/></radialGradient>
+<pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#111821" stroke-width="1"/></pattern></defs>
+<rect width="1600" height="1000" fill="url(#v)"/><rect width="1600" height="1000" fill="url(#g)"/>
+<rect x="110" y="110" width="1000" height="720" fill="#070a0e" stroke="#1c242e"/>
+<polyline points="110,410 160,398 210,382 260,386 310,378 360,373 410,354 460,352 510,354 560,348 610,346 660,352 710,359 760,339 810,378 860,388 910,408 960,403 1010,397 1060,392 1110,409" fill="none" stroke="#18202a" stroke-width="1.5"/>
+<polyline points="110,174 160,188 210,175 260,177 310,165 360,157 410,152 460,154 510,165 560,171 610,171 660,163 710,151 760,130 810,130 860,139 910,145 960,145 1010,130 1060,148 1110,151" fill="none" stroke="#18202a" stroke-width="1.5"/>
+<polyline points="110,414 160,403 210,429 260,422 310,432 360,432 410,445 460,436 510,450 560,449 610,466 660,475 710,477 760,466 810,477 860,483 910,506 960,501 1010,509 1060,516 1110,520" fill="none" stroke="#18202a" stroke-width="2"/>
+<polyline points="110,267 160,252 210,247 260,255 310,276 360,290 410,305 460,316 510,325 560,328 610,339 660,364 710,359 760,349 810,377 860,380 910,394 960,406 1010,390 1060,424 1110,449" fill="none" stroke="#18202a" stroke-width="1.5"/>
+<polyline points="110,452 160,453 210,460 260,448 310,456 360,460 410,459 460,457 510,444 560,458 610,471 660,484 710,488 760,481 810,467 860,480 910,476 960,485 1010,468 1060,453 1110,464" fill="none" stroke="#18202a" stroke-width="3"/>
+<polyline points="110,292 160,320 210,311 260,299 310,290 360,294 410,296 460,306 510,304 560,301 610,290 660,299 710,282 760,279 810,288 860,287 910,282 960,284 1010,302 1060,313 1110,298" fill="none" stroke="#18202a" stroke-width="2"/>
+<polyline points="110,306 160,294 210,307 260,313 310,313 360,318 410,314 460,331 510,337 560,336 610,346 660,358 710,347 760,366 810,333 860,328 910,301 960,284 1010,271 1060,273 1110,272" fill="none" stroke="#18202a" stroke-width="3"/>
+<polyline points="110,561 160,538 210,541 260,518 310,567 360,582 410,590 460,588 510,558 560,556 610,534 660,543 710,513 760,500 810,517 860,540 910,524 960,502 1010,515 1060,527 1110,513" fill="none" stroke="#18202a" stroke-width="3"/>
+<polyline points="110,572 160,574 210,579 260,582 310,590 360,597 410,586 460,593 510,612 560,604 610,589 660,593 710,576 760,572 810,560 860,559 910,561 960,563 1010,570 1060,568 1110,572" fill="none" stroke="#18202a" stroke-width="2"/>
+<polyline points="378,110 388,160 389,210 385,260 378,310 390,360 413,410 406,460 395,510 404,560 397,610 393,660 386,710 366,760 376,810" fill="none" stroke="#161d26" stroke-width="1.5"/>
+<polyline points="933,110 943,160 941,210 947,260 924,310 924,360 935,410 920,460 929,510 926,560 932,610 944,660 943,710 951,760 936,810" fill="none" stroke="#161d26" stroke-width="2"/>
+<polyline points="770,110 765,160 743,210 735,260 728,310 732,360 724,410 710,460 699,510 696,560 707,610 698,660 686,710 678,760 669,810" fill="none" stroke="#161d26" stroke-width="1.5"/>
+<polyline points="196,110 188,160 191,210 193,260 185,310 175,360 163,410 150,460 161,510 133,560 130,610 130,660 130,710 131,760 145,810" fill="none" stroke="#161d26" stroke-width="1.5"/>
+<polyline points="329,110 327,160 338,210 333,260 319,310 304,360 291,410 274,460 287,510 292,560 289,610 306,660 299,710 308,760 317,810" fill="none" stroke="#161d26" stroke-width="1.5"/>
+<polyline points="479,110 469,160 477,210 450,260 433,310 437,360 442,410 460,460 468,510 452,560 450,610 442,660 469,710 450,760 464,810" fill="none" stroke="#161d26" stroke-width="2"/>
+<polyline points="398,110 398,160 396,210 393,260 392,310 386,360 396,410 392,460 418,510 423,560 447,610 444,660 445,710 427,760 424,810" fill="none" stroke="#161d26" stroke-width="1.5"/>
+<path d="M210 720 L300 640 L420 610 L520 520 L610 470 L700 430 L800 330 L900 280 L1000 210" fill="none" stroke="#6cd3e0" stroke-width="10" opacity="0.12"/>
+<path d="M210 720 L300 640 L420 610 L520 520 L610 470 L700 430 L800 330 L900 280 L1000 210" fill="none" stroke="#6cd3e0" stroke-width="3"/>
+<path d="M210 720 L300 640 L420 610 L520 520 L610 470 L700 430 L800 330 L900 280 L1000 210" fill="none" stroke="#ece6da" stroke-width="3" stroke-dasharray="2 22" stroke-linecap="round"/>
+<circle cx="210" cy="720" r="9" fill="#ece6da"/><circle cx="1000" cy="210" r="11" fill="none" stroke="#ece6da" stroke-width="3"/><circle cx="1000" cy="210" r="4" fill="#ece6da"/>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="2"><text x="230" y="758" fill="#ece6da">PICKUP · DEALER</text><text x="980" y="176" fill="#ece6da" text-anchor="end">DROP-OFF</text></g>
+<g transform="translate(610 470)"><rect x="-16" y="-10" width="32" height="20" rx="2" fill="#6cd3e0" stroke="#6cd3e0" stroke-width="2"/><rect x="16" y="-6" width="10" height="16" fill="#0b1116" stroke="#6cd3e0" stroke-width="2"/></g>
+<g transform="translate(380 300)"><rect x="-16" y="-10" width="32" height="20" rx="2" fill="#0b1116" stroke="#7d858f" stroke-width="2"/><rect x="16" y="-6" width="10" height="16" fill="#0b1116" stroke="#7d858f" stroke-width="2"/></g>
+<g transform="translate(860 640)"><rect x="-16" y="-10" width="32" height="20" rx="2" fill="#0b1116" stroke="#7d858f" stroke-width="2"/><rect x="16" y="-6" width="10" height="16" fill="#0b1116" stroke="#7d858f" stroke-width="2"/></g>
+<g transform="translate(720 760)"><rect x="-16" y="-10" width="32" height="20" rx="2" fill="#0b1116" stroke="#7d858f" stroke-width="2"/><rect x="16" y="-6" width="10" height="16" fill="#0b1116" stroke="#7d858f" stroke-width="2"/></g>
+<g transform="translate(260 420)"><rect x="-16" y="-10" width="32" height="20" rx="2" fill="#0b1116" stroke="#7d858f" stroke-width="2"/><rect x="16" y="-6" width="10" height="16" fill="#0b1116" stroke="#7d858f" stroke-width="2"/></g>
+<g transform="translate(960 480)"><rect x="-16" y="-10" width="32" height="20" rx="2" fill="#0b1116" stroke="#7d858f" stroke-width="2"/><rect x="16" y="-6" width="10" height="16" fill="#0b1116" stroke="#7d858f" stroke-width="2"/></g>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2"><text x="636" y="500" fill="#6cd3e0">TRK-07  ASSIGNED</text></g>
+<circle cx="860" cy="640" r="40" fill="none" stroke="#e2584c" stroke-width="2.00" opacity="0.70"/>
+<circle cx="860" cy="640" r="90" fill="none" stroke="#e2584c" stroke-width="1.65" opacity="0.55"/>
+<circle cx="860" cy="640" r="150" fill="none" stroke="#e2584c" stroke-width="1.30" opacity="0.40"/>
+<circle cx="860" cy="640" r="220" fill="none" stroke="#e2584c" stroke-width="0.95" opacity="0.25"/>
+<circle cx="860" cy="640" r="6" fill="#e2584c"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2" fill="#e2584c" x="830" y="680" text-anchor="end">NGO · URGENT RELIEF</text>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="2" fill="#7d858f">
+<text x="1190" y="150">ACTIVE LOAD</text><text x="1190" y="182" fill="#ece6da">DEALER → DEPOT 4</text>
+<text x="1190" y="250">DISTANCE</text><text x="1190" y="278" fill="#ece6da">OSRM ROUTE</text><path d="M1190 296H1520" stroke="#1a222c"/>
+<text x="1190" y="320">ETA</text><text x="1190" y="348" fill="#ece6da">LIVE</text><path d="M1190 366H1520" stroke="#1a222c"/>
+<text x="1190" y="390">CAPACITY</text><text x="1190" y="418" fill="#ece6da">SPARE SPACE</text><path d="M1190 436H1520" stroke="#1a222c"/>
+<text x="1190" y="460">DRIVER</text><text x="1190" y="488" fill="#ece6da">LOCATION SHARED</text><path d="M1190 506H1520" stroke="#1a222c"/>
+<text x="1190" y="580">ROLES</text>
+<rect x="1190" y="600" width="12" height="12" fill="#ece6da"/><text x="1218" y="612" fill="#ece6da">DEALER</text>
+<rect x="1190" y="640" width="12" height="12" fill="#6cd3e0"/><text x="1218" y="652" fill="#ece6da">DRIVER</text>
+<rect x="1190" y="680" width="12" height="12" fill="#e2584c"/><text x="1218" y="692" fill="#ece6da">NGO</text>
+<text x="1190" y="780">EMPTY RETURN TRIPS</text><text x="1190" y="810" fill="#6cd3e0">→ BOOKABLE CAPACITY</text></g>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" fill="#7d858f" letter-spacing="3"><text x="64" y="944">BUILD/01  LIVE LOAD MATCHING</text><text x="1536" y="944" text-anchor="end">FIG. 03.1</text></g>
+<path d="M64 908H1536" stroke="#1c242e"/>
+</svg>

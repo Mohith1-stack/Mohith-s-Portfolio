@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mohith Dande — Cybersecurity × AI × Engineering</title>
+  <meta name="description" content="Mohith Dande is a CSE Cyber Security student building intelligent systems across cybersecurity, machine learning, deep learning, and full-stack engineering.">
+  <meta name="author" content="Mohith Dande">
+  <meta name="keywords" content="Mohith Dande, cybersecurity, machine learning, deep learning, AI, full-stack, Amrita Vishwa Vidyapeetham, Amritapuri, portfolio">
+  <meta name="theme-color" content="#06080b">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Open Graph. After deploying, replace the image path with the absolute URL (see README). -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mohith Dande">
+  <meta property="og:title" content="Mohith Dande — Cybersecurity × AI × Engineering">
+  <meta property="og:description" content="A CSE Cyber Security student building intelligent systems across cybersecurity, machine learning, deep learning, and full-stack engineering.">
+  <meta property="og:image" content="./assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mohith Dande — Security × Intelligence × Engineering">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mohith Dande — Cybersecurity × AI × Engineering">
+  <meta name="twitter:description" content="CSE Cyber Security student building intelligent systems.">
+  <meta name="twitter:image" content="./assets/images/og-image.png">
+
+  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png">
+  <link rel="preload" href="./assets/fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+
+  <script>
+    (function (d) {
+      var h = d.documentElement;
+      h.classList.remove('no-js');
+      h.classList.add('js');
+      try { if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) h.classList.add('reduced-motion'); } catch (e) {}
+    })(document);
+  </script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./assets/vendor/three/three.module.js"
+      }
+    }
+  </script>
+  <link rel="modulepreload" href="./assets/js/world.js">
+  <link rel="modulepreload" href="./assets/vendor/three/three.module.js">
+  <link rel="modulepreload" href="./assets/vendor/three/three.core.js">
+  <script src="./script.js" defer></script>
+  <script type="module" src="./assets/js/world.js"></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mohith Dande",
+      "jobTitle": "CSE Cyber Security Student / AI & ML Developer",
+      "affiliation": { "@type": "CollegeOrUniversity", "name": "Amrita Vishwa Vidyapeetham, Amritapuri" },
+      "address": { "@type": "PostalAddress", "addressRegion": "Kerala", "addressCountry": "IN" },
+      "sameAs": ["https://github.com/Mohith1-stack", "https://www.linkedin.com/in/mohith-dande-01b58a371/"],
+      "knowsAbout": ["Cybersecurity", "Artificial Intelligence", "Machine Learning", "Deep Learning", "Full-Stack Development"]
+    }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Environment layers (decorative) ============ -->
+  <div class="world-fallback" aria-hidden="true"></div>
+  <canvas id="world" class="world" aria-hidden="true" tabindex="-1"></canvas>
+
+  <div class="scrim" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__ring"></span><span class="cursor__dot"></span></div>
+
+  <!-- ============ Header / navigation ============ -->
+  <header class="site-header">
+    <a class="brand" href="#intro" aria-label="Mohith Dande, back to intro">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__name">Mohith Dande</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Chapters">
+      <ul class="primary-nav__list">
+        <li><a href="#intro" data-nav="0"><span class="nav-idx">01</span> Intro</a></li>
+        <li><a href="#about" data-nav="1"><span class="nav-idx">02</span> About</a></li>
+        <li><a href="#builds" data-nav="2"><span class="nav-idx">03</span> Builds</a></li>
+        <li><a href="#stack" data-nav="3"><span class="nav-idx">04</span> Stack</a></li>
+        <li><a href="#journey" data-nav="4"><span class="nav-idx">05</span> Journey</a></li>
+        <li><a href="#contact" data-nav="5"><span class="nav-idx">06</span> Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="menu-toggle__label">Menu</span>
+      <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Chapters, mobile">
+      <ol class="mobile-menu__list">
+        <li><a href="#intro" data-nav="0"><span class="nav-idx">01</span>Intro</a></li>
+        <li><a href="#about" data-nav="1"><span class="nav-idx">02</span>About</a></li>
+        <li><a href="#builds" data-nav="2"><span class="nav-idx">03</span>Builds</a></li>
+        <li><a href="#stack" data-nav="3"><span class="nav-idx">04</span>Stack</a></li>
+        <li><a href="#journey" data-nav="4"><span class="nav-idx">05</span>Journey</a></li>
+        <li><a href="#contact" data-nav="5"><span class="nav-idx">06</span>Contact</a></li>
+      </ol>
+      <p class="mobile-menu__meta">Amritapuri / Kerala / India</p>
+    </nav>
+  </div>
+
+  <nav class="rail" aria-label="Chapter progress">
+    <ol class="rail__list">
+      <li><a href="#intro" data-rail="0" aria-label="Chapter 01, Intro"><span class="rail__num">01</span><span class="rail__tick" aria-hidden="true"></span></a></li>
+      <li><a href="#about" data-rail="1" aria-label="Chapter 02, About"><span class="rail__num">02</span><span class="rail__tick" aria-hidden="true"></span></a></li>
+      <li><a href="#builds" data-rail="2" aria-label="Chapter 03, Builds"><span class="rail__num">03</span><span class="rail__tick" aria-hidden="true"></span></a></li>
+      <li><a href="#stack" data-rail="3" aria-label="Chapter 04, Stack"><span class="rail__num">04</span><span class="rail__tick" aria-hidden="true"></span></a></li>
+      <li><a href="#journey" data-rail="4" aria-label="Chapter 05, Journey"><span class="rail__num">05</span><span class="rail__tick" aria-hidden="true"></span></a></li>
+      <li><a href="#contact" data-rail="5" aria-label="Chapter 06, Contact"><span class="rail__num">06</span><span class="rail__tick" aria-hidden="true"></span></a></li>
+    </ol>
+    <div class="rail__progress" aria-hidden="true"><span class="rail__progress-fill"></span></div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ================= 01 INTRO ================= -->
+    <section class="chapter hero" id="intro" data-chapter="0" aria-labelledby="intro-title">
+      <div class="hero__top">
+        <p class="marker"><span class="marker__num">01</span><span class="marker__of">/ 06</span><span class="marker__label">Intro / Identity</span></p>
+        <dl class="coords">
+          <div><dt>Node</dt><dd>Amritapuri</dd></div>
+          <div><dt>Region</dt><dd>Kerala / India</dd></div>
+          <div><dt>Track</dt><dd>CSE • Cyber Security</dd></div>
+          <div><dt>Coordinates</dt><dd>09.09° N / 76.49° E</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero__main">
+        <p class="status"><span class="status__dot" aria-hidden="true"></span><span class="status__k">Currently building</span><span class="status__v">AI × Security</span></p>
+        <h1 class="hero__title" id="intro-title" data-split>
+          <span class="hero__line">Mohith</span>
+          <span class="hero__line hero__line--offset">Dande</span>
+        </h1>
+        <p class="hero__role" data-reveal style="--d:520ms">
+          <span>CSE Cyber Security</span>
+          <span>AI / ML Engineer</span>
+        </p>
+      </div>
+
+      <div class="hero__foot">
+        <p class="hero__intro" data-reveal style="--d:680ms">
+          A cybersecurity-focused computer science student building intelligent systems: machine-learning applications, security-minded hardware and full-stack software that holds up outside the notebook.
+        </p>
+        <dl class="facts" data-reveal style="--d:800ms">
+          <div><dt>Location</dt><dd>Kerala, India</dd></div>
+          <div><dt>University</dt><dd>Amrita Vishwa Vidyapeetham, Amritapuri</dd></div>
+          <div><dt>Current focus</dt><dd>Machine learning for security problems</dd></div>
+        </dl>
+        <div class="hero__cta" data-reveal style="--d:920ms">
+          <a class="btn btn--solid" href="#builds">Explore the builds</a>
+          <a class="btn btn--line" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about"><span class="scroll-cue__line" aria-hidden="true"></span><span>Scroll to enter</span></a>
+    </section>
+
+    <!-- ================= 02 ABOUT ================= -->
+    <section class="chapter about" id="about" data-chapter="1" aria-labelledby="about-title">
+      <p class="marker"><span class="marker__num">02</span><span class="marker__of">/ 06</span><span class="marker__label">About / System</span></p>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <h2 class="title" id="about-title" data-split>The system behind the builds</h2>
+
+          <p class="lede" data-reveal>
+            I study B.Tech Computer Science &amp; Engineering with a specialisation in Cyber Security at Amrita Vishwa Vidyapeetham, Amritapuri.
+          </p>
+          <p class="body" data-reveal>
+            My work sits where two disciplines meet. Security asks how a system fails; machine learning asks what a system can learn. I build across AI, ML, deep learning and cybersecurity, and I ship through full-stack development, because an idea is only tested once it runs.
+          </p>
+          <p class="body" data-reveal>
+            Most projects start as an experiment, get pushed through research and end as something practical: a model someone can query, a sensor that raises an alert, a platform people log into.
+          </p>
+
+          <dl class="domains" data-reveal>
+            <div><dt>Core domain</dt><dd>Cyber Security</dd></div>
+            <div><dt>Secondary domain</dt><dd>Artificial Intelligence</dd></div>
+            <div><dt>Build mode</dt><dd>Research / Experiment / Deploy</dd></div>
+          </dl>
+        </div>
+
+        <figure class="arch" aria-labelledby="arch-caption">
+          <figcaption class="arch__caption" id="arch-caption">How the work flows, from protection to outcome</figcaption>
+          <ol class="arch__chain">
+            <li class="arch__node" data-reveal style="--d:0ms"><span class="arch__idx">L0</span><span class="arch__name">Security</span><span class="arch__desc">Threat models, cryptography, defended surfaces</span></li>
+            <li class="arch__node" data-reveal style="--d:120ms"><span class="arch__idx">L1</span><span class="arch__name">Data</span><span class="arch__desc">Collection, cleaning, features worth trusting</span></li>
+            <li class="arch__node" data-reveal style="--d:240ms"><span class="arch__idx">L2</span><span class="arch__name">Intelligence</span><span class="arch__desc">Models that learn signal, and explain it</span></li>
+            <li class="arch__node" data-reveal style="--d:360ms"><span class="arch__idx">L3</span><span class="arch__name">Application</span><span class="arch__desc">Interfaces, APIs and devices people use</span></li>
+            <li class="arch__node" data-reveal style="--d:480ms"><span class="arch__idx">L4</span><span class="arch__name">Impact</span><span class="arch__desc">A real problem, measurably smaller</span></li>
+          </ol>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 03 BUILDS ================= -->
+    <section class="chapter builds" id="builds" data-chapter="2" aria-labelledby="builds-title">
+      <p class="marker"><span class="marker__num">03</span><span class="marker__of">/ 06</span><span class="marker__label">Projects / Builds</span></p>
+
+      <div class="builds__head">
+        <h2 class="title" id="builds-title" data-split>Selected builds</h2>
+        <p class="lede" data-reveal>Four systems across hardware security, developer tooling and full-stack platforms. Open a case file for the detail, or go straight to the code.</p>
+      </div>
+
+      <div class="builds__list">
+
+        <!-- 01 -->
+        <article class="build" id="build-01" aria-labelledby="build-01-title">
+          <a class="build__frame" href="https://github.com/Mohith1-stack/Empty-truck" target="_blank" rel="noopener noreferrer" aria-label="View Optimal-Truck on GitHub (opens in a new tab)">
+            <span class="build__plane"><img src="./assets/projects/optimal-truck.svg" alt="Procedural illustration of a live map: a routed load from a dealer pickup to a drop-off, an assigned truck on the route, idle trucks nearby, and red broadcast rings around an NGO relief request, beside a load panel with distance, ETA and roles." width="1600" height="1000" loading="lazy" decoding="async"></span>
+            <span class="build__hud" aria-hidden="true"><span>Build 01</span><span>React / Leaflet / OSRM</span></span>
+            <span class="build__view" aria-hidden="true"><span class="build__view-dot"></span>View project <span class="build__view-arrow">→</span></span>
+          </a>
+          <div class="build__body">
+            <p class="build__num" aria-hidden="true">01</p>
+            <h3 class="build__title" id="build-01-title" data-split>Optimal-Truck</h3>
+            <p class="build__desc" data-reveal>Logistics platform that turns empty return trips into bookable capacity, matching dealers, truck drivers and NGOs in real time on a live map.</p>
+            <dl class="build__meta" data-reveal>
+              <div><dt>Category</dt><dd>Logistics platform</dd></div>
+              <div><dt>Status</dt><dd><span class="chip" data-status="built">Built</span></dd></div>
+            </dl>
+            <ul class="build__stack" aria-label="Technologies" data-reveal>
+              <li>React 19</li><li>TypeScript</li><li>Vite</li><li>React Router</li><li>Leaflet</li><li>OSRM</li><li>Supabase</li>
+            </ul>
+            <div class="build__actions" data-reveal>
+              <button class="case-btn" type="button" data-case="build-01" aria-haspopup="dialog">Open case file</button>
+              <a class="ext-link" href="https://github.com/Mohith1-stack/Empty-truck" target="_blank" rel="noopener noreferrer">GitHub<span class="ext-link__icon" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+            <div class="build__more" hidden>
+              <p>Trucks often drive back empty. Dealers see available trucks on a live map and send loads directly or broadcast them to nearby drivers. Drivers share their location, accept work and get routed with distance and ETA. NGOs can push urgent relief requests to every available truck in the area.</p>
+              <ul>
+                <li>Separate dashboards for dealers, drivers and NGOs</li>
+                <li>Live GPS tracking on Leaflet maps, with OSRM routing for distance and ETA</li>
+                <li>Urgent humanitarian broadcasts that drivers can take at fuel-only cost or for free</li>
+                <li>Supabase PostgreSQL with row-level security and real-time sync across sessions</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="build" id="build-02" aria-labelledby="build-02-title">
+          <a class="build__frame" href="https://github.com/Mohith1-stack/Aegis-LLC" target="_blank" rel="noopener noreferrer" aria-label="View AEGIS on GitHub (opens in a new tab)">
+            <span class="build__plane"><img src="./assets/projects/aegis.svg" alt="Procedural illustration of a cache-set occupancy grid with a highlighted Prime+Probe pattern, a telemetry trace with an attack window marked, and a pipeline of CNN, Bi-LSTM and system-state models feeding cross-modal attention and a containment step." width="1600" height="1000" loading="lazy" decoding="async"></span>
+            <span class="build__hud" aria-hidden="true"><span>Build 02</span><span>PyTorch / eBPF / Intel RDT</span></span>
+            <span class="build__view" aria-hidden="true"><span class="build__view-dot"></span>View project <span class="build__view-arrow">→</span></span>
+          </a>
+          <div class="build__body">
+            <p class="build__num" aria-hidden="true">02</p>
+            <h3 class="build__title" id="build-02-title" data-split>AEGIS</h3>
+            <p class="build__desc" data-reveal>Detects CPU side-channel attacks such as Spectre, Flush+Reload and Prime+Probe in real time, then contains the attacking process at the hardware level.</p>
+            <dl class="build__meta" data-reveal>
+              <div><dt>Category</dt><dd>Hardware security</dd></div>
+              <div><dt>Status</dt><dd><span class="chip" data-status="research">Research</span></dd></div>
+            </dl>
+            <ul class="build__stack" aria-label="Technologies" data-reveal>
+              <li>Python</li><li>PyTorch</li><li>eBPF</li><li>Linux PMU</li><li>Intel RDT</li><li>CNN</li><li>Bi-LSTM</li>
+            </ul>
+            <div class="build__actions" data-reveal>
+              <button class="case-btn" type="button" data-case="build-02" aria-haspopup="dialog">Open case file</button>
+              <a class="ext-link" href="https://github.com/Mohith1-stack/Aegis-LLC" target="_blank" rel="noopener noreferrer">GitHub<span class="ext-link__icon" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+            <div class="build__more" hidden>
+              <p>eBPF probes stream hardware performance counters (cache misses, branch mispredictions, context switches) into a deep learning model. When it flags an attack, the attacking process is moved into a restricted Intel RDT class of service, limited to one cache way and 10% memory bandwidth, so the side channel collapses without killing the process.</p>
+              <ul>
+                <li>Three-part model: a CNN over cache occupancy, a Bi-LSTM over access timing and a dense network over system state, fused with cross-modal attention</li>
+                <li>99.33% accuracy and 1.29 ms average inference per sample on its holdout test set</li>
+                <li>Falls back to software throttling on machines without Intel RDT or AMD QoS</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="build" id="build-03" aria-labelledby="build-03-title">
+          <a class="build__frame" href="https://github.com/Mohith1-stack/TraceSieve" target="_blank" rel="noopener noreferrer" aria-label="View TraceSieve on GitHub (opens in a new tab)">
+            <span class="build__plane"><img src="./assets/projects/tracesieve.svg" alt="Procedural illustration of an execution call tree from main to authorize, a diff panel comparing login and checkout scenarios, and a static-versus-runtime table marking the legacy module as unobserved." width="1600" height="1000" loading="lazy" decoding="async"></span>
+            <span class="build__hud" aria-hidden="true"><span>Build 03</span><span>Python stdlib / SQLite</span></span>
+            <span class="build__view" aria-hidden="true"><span class="build__view-dot"></span>View project <span class="build__view-arrow">→</span></span>
+          </a>
+          <div class="build__body">
+            <p class="build__num" aria-hidden="true">03</p>
+            <h3 class="build__title" id="build-03-title" data-split>TraceSieve</h3>
+            <p class="build__desc" data-reveal>Records what a Python program actually executed and compares runs, exposing unexpected behaviour and code paths a test never touched.</p>
+            <dl class="build__meta" data-reveal>
+              <div><dt>Category</dt><dd>Runtime auditing tool</dd></div>
+              <div><dt>Status</dt><dd><span class="chip" data-status="built">Built</span></dd></div>
+            </dl>
+            <ul class="build__stack" aria-label="Technologies" data-reveal>
+              <li>Python</li><li>sys.settrace</li><li>AST</li><li>SQLite</li><li>argparse</li><li>zipapp</li>
+            </ul>
+            <div class="build__actions" data-reveal>
+              <button class="case-btn" type="button" data-case="build-03" aria-haspopup="dialog">Open case file</button>
+              <a class="ext-link" href="https://github.com/Mohith1-stack/TraceSieve" target="_blank" rel="noopener noreferrer">GitHub<span class="ext-link__icon" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+            <div class="build__more" hidden>
+              <p>Source code shows what a program could do; TraceSieve shows what one run actually did. It traces an execution into a local evidence store, then explains why a function ran, how two scenarios differ, and which functions a scenario never reached.</p>
+              <ul>
+                <li>why, diff and gaps commands for call paths, scenario deltas and untested code</li>
+                <li>Built only on the Python standard library and shipped as a single .pyz file</li>
+                <li>Records structure, never arguments, variables or secrets, and runs fully offline</li>
+                <li>Predictable exit codes so it can gate CI pipelines</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 -->
+        <article class="build" id="build-04" aria-labelledby="build-04-title">
+          <a class="build__frame" href="https://github.com/Mohith1-stack/AI-Powered-Freelance-Marketplace" target="_blank" rel="noopener noreferrer" aria-label="View SkillBridge AI on GitHub (opens in a new tab)">
+            <span class="build__plane"><img src="./assets/projects/skillbridge-ai.svg" alt="Procedural illustration of an escrow flow from client to escrow to freelancer wallet with a dispute-refund path, a transaction ledger, an ATS match score ring and a real-time chat room." width="1600" height="1000" loading="lazy" decoding="async"></span>
+            <span class="build__hud" aria-hidden="true"><span>Build 04</span><span>Flask / React / Socket.IO</span></span>
+            <span class="build__view" aria-hidden="true"><span class="build__view-dot"></span>View project <span class="build__view-arrow">→</span></span>
+          </a>
+          <div class="build__body">
+            <p class="build__num" aria-hidden="true">04</p>
+            <h3 class="build__title" id="build-04-title" data-split>SkillBridge AI</h3>
+            <p class="build__desc" data-reveal>Freelance marketplace that combines escrow payments and live chat with resume analysis, gig recommendations and an AI support assistant.</p>
+            <dl class="build__meta" data-reveal>
+              <div><dt>Category</dt><dd>Full-stack marketplace</dd></div>
+              <div><dt>Status</dt><dd><span class="chip" data-status="built">Built</span></dd></div>
+            </dl>
+            <ul class="build__stack" aria-label="Technologies" data-reveal>
+              <li>Flask</li><li>React</li><li>Vite</li><li>Tailwind CSS</li><li>Socket.IO</li><li>SQLAlchemy</li><li>SQLite</li><li>JWT</li>
+            </ul>
+            <div class="build__actions" data-reveal>
+              <button class="case-btn" type="button" data-case="build-04" aria-haspopup="dialog">Open case file</button>
+              <a class="ext-link" href="https://github.com/Mohith1-stack/AI-Powered-Freelance-Marketplace" target="_blank" rel="noopener noreferrer">GitHub<span class="ext-link__icon" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+            <div class="build__more" hidden>
+              <p>Clients hire freelancers through gig listings. Payment is held in escrow until the client approves the work, then released to the freelancer&#x27;s wallet, with every transaction recorded in a central ledger and disputes handled by an admin.</p>
+              <ul>
+                <li>ATS resume analyser that scores a resume against a target role and lists missing skills</li>
+                <li>Gig recommendations from order history, category trends and freelancer ratings</li>
+                <li>Real-time chat rooms with typing indicators over Socket.IO</li>
+                <li>Stripe and Razorpay test integrations, JWT authentication and admin refunds</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= 04 STACK ================= -->
+    <section class="chapter stack" id="stack" data-chapter="3" aria-labelledby="stack-title">
+      <p class="marker"><span class="marker__num">04</span><span class="marker__of">/ 06</span><span class="marker__label">Skills / Stack</span></p>
+
+      <div class="stack__grid">
+        <div class="stack__visual">
+          <h2 class="title" id="stack-title" data-split>The stack</h2>
+          <p class="lede" data-reveal>Tools as layers of one system: each layer carries the one above it, from language to deployed application.</p>
+          <figure class="layers" data-reveal>
+<svg class="layers__svg" viewBox="0 0 540 560" role="img" aria-labelledby="layers-title layers-desc">
+<title id="layers-title">The stack as connected layers</title>
+<desc id="layers-desc">Six stacked layers, each feeding the one below: Languages, Frameworks, Data, AI, Security and Applications.</desc>
+<g class="layers__spine" aria-hidden="true"><path d="M180 20V540"/><path class="layers__flow" d="M180 20V540"/><path d="M70 70V460" class="layers__edge"/><path d="M290 70V460" class="layers__edge"/></g>
+<g class="layer" data-layer="applications" style="--i:5"><path class="layer__plate" d="M180 405L290 460L180 515L70 460Z"/><path class="layer__grid" d="M97.5 446.2L207.5 501.2M97.5 473.8L207.5 418.8M125.0 432.5L235.0 487.5M125.0 487.5L235.0 432.5M152.5 418.8L262.5 473.8M152.5 501.2L262.5 446.2"/><circle class="layer__node" cx="180" cy="460" r="3.5"/><path class="layer__leader" d="M296 460H330"/><text class="layer__label" x="340" y="458">Applications</text><text class="layer__sub" x="340" y="478">Web / IoT / Deployed tools</text></g>
+<g class="layer" data-layer="security" style="--i:4"><path class="layer__plate" d="M180 327L290 382L180 437L70 382Z"/><path class="layer__grid" d="M97.5 368.2L207.5 423.2M97.5 395.8L207.5 340.8M125.0 354.5L235.0 409.5M125.0 409.5L235.0 354.5M152.5 340.8L262.5 395.8M152.5 423.2L262.5 368.2"/><circle class="layer__node" cx="180" cy="382" r="3.5"/><path class="layer__leader" d="M296 382H330"/><text class="layer__label" x="340" y="380">Security</text><text class="layer__sub" x="340" y="400">Crypto / IDS / Networks</text></g>
+<g class="layer" data-layer="ai" style="--i:3"><path class="layer__plate" d="M180 249L290 304L180 359L70 304Z"/><path class="layer__grid" d="M97.5 290.2L207.5 345.2M97.5 317.8L207.5 262.8M125.0 276.5L235.0 331.5M125.0 331.5L235.0 276.5M152.5 262.8L262.5 317.8M152.5 345.2L262.5 290.2"/><circle class="layer__node" cx="180" cy="304" r="3.5"/><path class="layer__leader" d="M296 304H330"/><text class="layer__label" x="340" y="302">AI</text><text class="layer__sub" x="340" y="322">ML / DL / CNN / LSTM / XAI</text></g>
+<g class="layer" data-layer="data" style="--i:2"><path class="layer__plate" d="M180 171L290 226L180 281L70 226Z"/><path class="layer__grid" d="M97.5 212.2L207.5 267.2M97.5 239.8L207.5 184.8M125.0 198.5L235.0 253.5M125.0 253.5L235.0 198.5M152.5 184.8L262.5 239.8M152.5 267.2L262.5 212.2"/><circle class="layer__node" cx="180" cy="226" r="3.5"/><path class="layer__leader" d="M296 226H330"/><text class="layer__label" x="340" y="224">Data</text><text class="layer__sub" x="340" y="244">Pandas / NumPy / SQL</text></g>
+<g class="layer" data-layer="frameworks" style="--i:1"><path class="layer__plate" d="M180 93L290 148L180 203L70 148Z"/><path class="layer__grid" d="M97.5 134.2L207.5 189.2M97.5 161.8L207.5 106.8M125.0 120.5L235.0 175.5M125.0 175.5L235.0 120.5M152.5 106.8L262.5 161.8M152.5 189.2L262.5 134.2"/><circle class="layer__node" cx="180" cy="148" r="3.5"/><path class="layer__leader" d="M296 148H330"/><text class="layer__label" x="340" y="146">Frameworks</text><text class="layer__sub" x="340" y="166">Flask / TensorFlow / PyTorch</text></g>
+<g class="layer" data-layer="languages" style="--i:0"><path class="layer__plate" d="M180 15L290 70L180 125L70 70Z"/><path class="layer__grid" d="M97.5 56.2L207.5 111.2M97.5 83.8L207.5 28.8M125.0 42.5L235.0 97.5M125.0 97.5L235.0 42.5M152.5 28.8L262.5 83.8M152.5 111.2L262.5 56.2"/><circle class="layer__node" cx="180" cy="70" r="3.5"/><path class="layer__leader" d="M296 70H330"/><text class="layer__label" x="340" y="68">Languages</text><text class="layer__sub" x="340" y="88">Python / C / C++ / Java / JS</text></g>
+</svg>
+
+          </figure>
+        </div>
+
+        <div class="stack__groups">
+          <div class="group" data-layers="languages" data-reveal>
+            <div class="group__head"><span class="group__idx">S.01</span><h3 class="group__title">Programming</h3><span class="group__count" aria-label="7 items">07</span></div>
+            <ul class="group__items"><li>Python</li><li>C</li><li>C++</li><li>Java</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+          </div>
+          <div class="group" data-layers="data ai" data-reveal>
+            <div class="group__head"><span class="group__idx">S.02</span><h3 class="group__title">AI / Machine Learning</h3><span class="group__count" aria-label="11 items">11</span></div>
+            <ul class="group__items"><li>Scikit-learn</li><li>TensorFlow</li><li>PyTorch</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Machine Learning</li><li>Deep Learning</li><li>CNN</li><li>RNN / LSTM</li><li>XAI</li></ul>
+          </div>
+          <div class="group" data-layers="security" data-reveal>
+            <div class="group__head"><span class="group__idx">S.03</span><h3 class="group__title">Cybersecurity</h3><span class="group__count" aria-label="7 items">07</span></div>
+            <ul class="group__items"><li>Network Security</li><li>Threat Detection</li><li>Cryptography</li><li>RSA</li><li>AES</li><li>Intrusion Detection</li><li>Security Fundamentals</li></ul>
+          </div>
+          <div class="group" data-layers="frameworks data" data-reveal>
+            <div class="group__head"><span class="group__idx">S.04</span><h3 class="group__title">Backend / Database</h3><span class="group__count" aria-label="5 items">05</span></div>
+            <ul class="group__items"><li>Flask</li><li>Firebase</li><li>SQLite</li><li>PostgreSQL</li><li>REST APIs</li></ul>
+          </div>
+          <div class="group" data-layers="applications" data-reveal>
+            <div class="group__head"><span class="group__idx">S.05</span><h3 class="group__title">Tools</h3><span class="group__count" aria-label="6 items">06</span></div>
+            <ul class="group__items"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Jupyter Notebook</li><li>Vercel</li><li>GitHub Pages</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 05 JOURNEY ================= -->
+    <section class="chapter journey" id="journey" data-chapter="4" aria-labelledby="journey-title">
+      <p class="marker"><span class="marker__num">05</span><span class="marker__of">/ 06</span><span class="marker__label">Experience / Journey</span></p>
+
+      <div class="journey__grid">
+        <div class="journey__aside">
+          <h2 class="title" id="journey-title" data-split>The journey</h2>
+          <p class="lede" data-reveal>Six phases, each one building on the last.</p>
+          <p class="journey__counter" aria-hidden="true"><span class="journey__current">01</span><span class="journey__total">/ 06</span></p>
+        </div>
+
+        <ol class="timeline">
+          <li class="milestone" data-milestone="0">
+            <span class="milestone__idx" aria-hidden="true">01</span>
+            <div class="milestone__body">
+              <h3 class="milestone__title">CSE Cyber Security</h3>
+              <p class="milestone__where">Amrita Vishwa Vidyapeetham</p>
+              <p class="milestone__text">The foundation: computing, networks and systems, studied with a security mindset that shapes everything after.</p>
+            </div>
+          </li>
+          <li class="milestone" data-milestone="1">
+            <span class="milestone__idx" aria-hidden="true">02</span>
+            <div class="milestone__body">
+              <h3 class="milestone__title">Full-Stack Development</h3>
+              <p class="milestone__where">Flask / Firebase / Web Applications</p>
+              <p class="milestone__text">Shipping complete applications with authentication, databases, dashboards and APIs.</p>
+              <p class="milestone__refs">Related: <a href="#build-01">Optimal-Truck</a>, <a href="#build-04">SkillBridge AI</a></p>
+            </div>
+          </li>
+          <li class="milestone" data-milestone="2">
+            <span class="milestone__idx" aria-hidden="true">03</span>
+            <div class="milestone__body">
+              <h3 class="milestone__title">Machine Learning</h3>
+              <p class="milestone__where">Classical ML / Data Science</p>
+              <p class="milestone__text">Features, models and evaluation, from exploratory analysis to prediction.</p>
+            </div>
+          </li>
+          <li class="milestone" data-milestone="3">
+            <span class="milestone__idx" aria-hidden="true">04</span>
+            <div class="milestone__body">
+              <h3 class="milestone__title">Deep Learning</h3>
+              <p class="milestone__where">CNN / RNN / Transfer Learning / XAI</p>
+              <p class="milestone__text">Neural architectures for images and sequences, with explainability treated as a requirement.</p>
+              <p class="milestone__refs">Related: <a href="#build-02">AEGIS</a></p>
+            </div>
+          </li>
+          <li class="milestone" data-milestone="4">
+            <span class="milestone__idx" aria-hidden="true">05</span>
+            <div class="milestone__body">
+              <h3 class="milestone__title">Cybersecurity</h3>
+              <p class="milestone__where">Networks / Cryptography / Threat Detection</p>
+              <p class="milestone__text">RSA, AES and intrusion detection: learning how systems break so they can be defended.</p>
+              <p class="milestone__refs">Related: <a href="#build-02">AEGIS</a>, <a href="#build-03">TraceSieve</a></p>
+            </div>
+          </li>
+          <li class="milestone" data-milestone="5">
+            <span class="milestone__idx" aria-hidden="true">06</span>
+            <div class="milestone__body">
+              <h3 class="milestone__title">Research &amp; Hackathons</h3>
+              <p class="milestone__where">AI × Security × Real-world Systems</p>
+              <p class="milestone__text">Hackathons and research-driven builds that put intelligence and security to work on real problems.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= 06 CONTACT ================= -->
+    <section class="chapter contact" id="contact" data-chapter="5" aria-labelledby="contact-title">
+      <p class="marker"><span class="marker__num">06</span><span class="marker__of">/ 06</span><span class="marker__label">Contact / Afterlight</span></p>
+
+      <h2 class="contact__title" id="contact-title" data-split>
+        <span class="contact__line">Let's</span>
+        <span class="contact__line">build something</span>
+        <span class="contact__line">intelligent.</span>
+      </h2>
+
+      <div class="contact__grid">
+        <p class="lede" data-reveal>Open to collaborations, technical projects, research opportunities, internships, and interesting problems at the intersection of AI, cybersecurity, and software engineering.</p>
+
+        <div class="contact__channels" data-reveal>
+          <p class="contact__label" id="contact-label">Get in touch</p>
+          <a class="contact__email" href="mailto:mohithdande3@gmail.com">mohithdande3@gmail.com</a>
+          <ul class="contact__links" aria-labelledby="contact-label">
+            <li><a class="ext-link" href="https://github.com/Mohith1-stack" target="_blank" rel="noopener noreferrer">GitHub<span class="ext-link__icon" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></li>
+            <li><a class="ext-link" href="https://www.linkedin.com/in/mohith-dande-01b58a371/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="ext-link__icon" aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></li>
+            <li><a class="ext-link" href="mailto:mohithdande3@gmail.com">Email<span class="ext-link__icon" aria-hidden="true">@</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contact__sign" data-reveal>
+        <p class="contact__id">Mohith Dande<br>CSE Cyber Security<br>Amritapuri / Kerala / India</p>
+        <p class="contact__manifesto" aria-label="Build. Secure. Intelligent."><span>Build.</span><span>Secure.</span><span>Intelligent.</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__grid">
+      <p class="site-footer__name">Mohith Dande</p>
+      <p>CSE Cyber Security</p>
+      <p>AI × Security × Engineering</p>
+      <p>Amritapuri / Kerala / India</p>
+    </div>
+    <div class="site-footer__bottom">
+      <ul class="site-footer__links">
+        <li><a href="https://github.com/Mohith1-stack" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="https://www.linkedin.com/in/mohith-dande-01b58a371/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="mailto:mohithdande3@gmail.com">Email</a></li>
+      </ul>
+      <p class="site-footer__copy">© 2026 Mohith Dande</p>
+    </div>
+  </footer>
+
+  <!-- Project case file (populated from the article that opens it) -->
+  <dialog class="case" id="case" aria-labelledby="case-title">
+    <div class="case__inner">
+      <div class="case__visual"></div>
+      <div class="case__content">
+        <div class="case__top">
+          <p class="case__num"></p>
+          <button class="case__close" type="button" data-case-close>Close<span class="sr-only"> case file</span></button>
+        </div>
+        <h2 class="case__title" id="case-title"></h2>
+        <div class="case__desc"></div>
+        <dl class="case__meta"></dl>
+        <ul class="case__stack"></ul>
+        <div class="case__links"></div>
+      </div>
+    </div>
+  </dialog>
+
+  <noscript>
+    <style>.world, .cursor { display: none !important; }</style>
+  </noscript>
+</body>
+</html>

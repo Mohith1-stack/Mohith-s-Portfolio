@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs><radialGradient id="v" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#0e141c"/><stop offset="1" stop-color="#05070a"/></radialGradient>
+<pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#111821" stroke-width="1"/></pattern></defs>
+<rect width="1600" height="1000" fill="url(#v)"/><rect width="1600" height="1000" fill="url(#g)"/>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="2" fill="#7d858f" x="120" y="120">WHY WAS THIS EXECUTED?</text>
+<circle cx="120" cy="154" r="5" fill="#ece6da"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#ece6da" x="138" y="160">main()</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#4a525c" x="640" y="160" text-anchor="end" letter-spacing="2">#12</text>
+<path d="M130 174V226H168" fill="none" stroke="#ece6da" stroke-width="2"/>
+<circle cx="176" cy="226" r="5" fill="#ece6da"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#ece6da" x="194" y="232">checkout()</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#4a525c" x="640" y="232" text-anchor="end" letter-spacing="2">#17</text>
+<path d="M186 246V298H224" fill="none" stroke="#2e3a46" stroke-width="1.5"/>
+<circle cx="232" cy="298" r="5" fill="#7d858f"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#7d858f" x="250" y="304">load_cart()</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#4a525c" x="640" y="304" text-anchor="end" letter-spacing="2">#22</text>
+<path d="M186 246V370H224" fill="none" stroke="#ece6da" stroke-width="2"/>
+<circle cx="232" cy="370" r="5" fill="#ece6da"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#ece6da" x="250" y="376">process_payment()</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#4a525c" x="640" y="376" text-anchor="end" letter-spacing="2">#27</text>
+<path d="M242 390V442H280" fill="none" stroke="#6cd3e0" stroke-width="2"/>
+<circle cx="288" cy="442" r="5" fill="#6cd3e0"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#6cd3e0" x="306" y="448">authorize()</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#4a525c" x="640" y="448" text-anchor="end" letter-spacing="2">#32</text>
+<path d="M298 462V514H336" fill="none" stroke="#6cd3e0" stroke-width="2"/>
+<circle cx="344" cy="514" r="5" fill="#6cd3e0"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#6cd3e0" x="362" y="520">check()</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#4a525c" x="640" y="520" text-anchor="end" letter-spacing="2">#37</text>
+<path d="M186 246V586H224" fill="none" stroke="#2e3a46" stroke-width="1.5"/>
+<circle cx="232" cy="586" r="5" fill="#7d858f"/><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="22" fill="#7d858f" x="250" y="592">query()  ×9</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" fill="#4a525c" x="640" y="592" text-anchor="end" letter-spacing="2">#42</text>
+<rect x="760" y="120" width="720" height="330" fill="#0a0e13" stroke="#1f2731"/>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="2"><text x="790" y="164" fill="#7d858f">DIFF  LOGIN ↔ CHECKOUT</text>
+<text x="790" y="216" fill="#e2584c" font-size="22">−  login</text>
+<text x="790" y="258" fill="#e2584c" font-size="22">−  session_create</text>
+<text x="790" y="300" fill="#5cc39b" font-size="22">+  authorize</text>
+<text x="790" y="342" fill="#5cc39b" font-size="22">+  load_cart</text>
+<text x="790" y="384" fill="#5cc39b" font-size="22">+  process_payment</text>
+<text x="1160" y="216" fill="#7d858f">SHARED</text>
+<text x="1160" y="258" fill="#ece6da" font-size="20">  connect</text>
+<text x="1160" y="300" fill="#ece6da" font-size="20">  main</text>
+<text x="1160" y="342" fill="#ece6da" font-size="20">  query</text>
+<text x="1160" y="384" fill="#ece6da" font-size="20">  validate</text>
+</g>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="2"><text x="760" y="520" fill="#7d858f">GAPS  STATIC ↔ RUNTIME</text>
+<text x="1180" y="564" fill="#7d858f">STATIC</text><text x="1340" y="564" fill="#7d858f">RUNTIME</text>
+<path d="M760 628H1480" stroke="#161d26"/><text x="760" y="612" fill="#ece6da" font-size="20">auth</text>
+<rect x="1200" y="596" width="18" height="18" fill="#6cd3e0"/>
+<rect x="1368" y="596" width="18" height="18" fill="#6cd3e0"/>
+<path d="M760 678H1480" stroke="#161d26"/><text x="760" y="662" fill="#ece6da" font-size="20">database</text>
+<rect x="1200" y="646" width="18" height="18" fill="#6cd3e0"/>
+<rect x="1368" y="646" width="18" height="18" fill="#6cd3e0"/>
+<path d="M760 728H1480" stroke="#161d26"/><text x="760" y="712" fill="#ece6da" font-size="20">payment</text>
+<rect x="1200" y="696" width="18" height="18" fill="#6cd3e0"/>
+<rect x="1368" y="696" width="18" height="18" fill="#6cd3e0"/>
+<path d="M760 778H1480" stroke="#161d26"/><text x="760" y="762" fill="#ece6da" font-size="20">legacy</text>
+<rect x="1200" y="746" width="18" height="18" fill="#6cd3e0"/>
+<rect x="1368" y="746" width="18" height="18" fill="none" stroke="#e2584c" stroke-width="2"/><text x="1410" y="762" fill="#e2584c">UNOBSERVED</text>
+</g>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="2" fill="#7d858f"><text x="120" y="760">EVIDENCE STORE</text><text x="120" y="792" fill="#ece6da">SQLITE · LOCAL · OFFLINE</text><text x="120" y="840">DEPENDENCIES</text><text x="120" y="872" fill="#5cc39b">0 · PYTHON STDLIB</text></g>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" fill="#7d858f" letter-spacing="3"><text x="64" y="944">BUILD/03  RUNTIME EVIDENCE TRAIL</text><text x="1536" y="944" text-anchor="end">FIG. 03.3</text></g>
+<path d="M64 908H1536" stroke="#1c242e"/>
+</svg>

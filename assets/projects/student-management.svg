@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs><radialGradient id="v" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#0e141c"/><stop offset="1" stop-color="#05070a"/></radialGradient>
+<pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#111821" stroke-width="1"/></pattern></defs>
+<rect width="1600" height="1000" fill="url(#v)"/><rect width="1600" height="1000" fill="url(#g)"/>
+<rect x="140" y="170" width="300" height="210" fill="#0c1117" stroke="#2f3843" stroke-width="1.5"/><rect x="140" y="170" width="300" height="48" fill="#111821"/>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" letter-spacing="3" x="160" y="201" fill="#8f86d6">USERS</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="160" y="256" fill="#ece6da">id</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="420" y="256" fill="#4f5863" text-anchor="end">PK</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="160" y="294" fill="#7d858f">email</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="420" y="294" fill="#4f5863" text-anchor="end">TEXT</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="160" y="332" fill="#7d858f">password_hash</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="420" y="332" fill="#4f5863" text-anchor="end">TEXT</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="160" y="370" fill="#7d858f">role</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="420" y="370" fill="#4f5863" text-anchor="end">ENUM</text>
+<rect x="620" y="120" width="300" height="286" fill="#0c1117" stroke="#2f3843" stroke-width="1.5"/><rect x="620" y="120" width="300" height="48" fill="#111821"/>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" letter-spacing="3" x="640" y="151" fill="#6cd3e0">STUDENTS</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="640" y="206" fill="#ece6da">id</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="900" y="206" fill="#4f5863" text-anchor="end">PK</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="640" y="244" fill="#7d858f">roll_no</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="900" y="244" fill="#4f5863" text-anchor="end">TEXT</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="640" y="282" fill="#7d858f">name</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="900" y="282" fill="#4f5863" text-anchor="end">TEXT</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="640" y="320" fill="#7d858f">department</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="900" y="320" fill="#4f5863" text-anchor="end">TEXT</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="640" y="358" fill="#7d858f">year</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="900" y="358" fill="#4f5863" text-anchor="end">INT</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="640" y="396" fill="#7d858f">created_by</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="900" y="396" fill="#4f5863" text-anchor="end">FK</text>
+<rect x="1140" y="170" width="300" height="210" fill="#0c1117" stroke="#2f3843" stroke-width="1.5"/><rect x="1140" y="170" width="300" height="48" fill="#111821"/>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" letter-spacing="3" x="1160" y="201" fill="#5cc39b">ATTENDANCE</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="1160" y="256" fill="#ece6da">id</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="1420" y="256" fill="#4f5863" text-anchor="end">PK</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="1160" y="294" fill="#7d858f">student_id</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="1420" y="294" fill="#4f5863" text-anchor="end">FK</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="1160" y="332" fill="#7d858f">date</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="1420" y="332" fill="#4f5863" text-anchor="end">DATE</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="1160" y="370" fill="#7d858f">status</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="1420" y="370" fill="#4f5863" text-anchor="end">ENUM</text>
+<rect x="620" y="560" width="300" height="172" fill="#0c1117" stroke="#2f3843" stroke-width="1.5"/><rect x="620" y="560" width="300" height="48" fill="#111821"/>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" letter-spacing="3" x="640" y="591" fill="#ece6da">REPORTS</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="640" y="646" fill="#ece6da">id</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="900" y="646" fill="#4f5863" text-anchor="end">PK</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="640" y="684" fill="#7d858f">student_id</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="900" y="684" fill="#4f5863" text-anchor="end">FK</text>
+<text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" x="640" y="722" fill="#7d858f">period</text><text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" x="900" y="722" fill="#4f5863" text-anchor="end">TEXT</text>
+<g fill="none" stroke="#4a5461" stroke-width="1.5"><path d="M440 280 H 530 V 390 H 620"/><path d="M920 280 H 1030 V 300 H 1140"/><path d="M770 480 V 560"/></g>
+<circle cx="620" cy="390" r="5" fill="#080b10" stroke="#ece6da" stroke-width="1.5"/>
+<circle cx="1140" cy="300" r="5" fill="#080b10" stroke="#ece6da" stroke-width="1.5"/>
+<circle cx="770" cy="560" r="5" fill="#080b10" stroke="#ece6da" stroke-width="1.5"/>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="2" fill="#7d858f"><text x="140" y="560">ROLE-BASED ACCESS</text>
+<rect x="140" y="590" width="220" height="36" fill="none" stroke="#2f3843"/><text x="158" y="614" fill="#ece6da">ADMIN</text>
+<rect x="140" y="642" width="220" height="36" fill="none" stroke="#2f3843"/><text x="158" y="666" fill="#6cd3e0">FACULTY</text>
+<rect x="140" y="694" width="220" height="36" fill="none" stroke="#2f3843"/><text x="158" y="718" fill="#7d858f">STUDENT</text>
+<text x="1140" y="560">SEARCH</text><rect x="1140" y="580" width="300" height="44" fill="none" stroke="#2f3843"/><text x="1160" y="608" fill="#4f5863">roll_no, name…</text>
+<text x="1140" y="690">PAGINATION</text>
+<rect x="1140" y="710" width="50" height="44" fill="none" stroke="#2f3843"/><text x="1165" y="738" text-anchor="middle" fill="#7d858f">‹</text>
+<rect x="1202" y="710" width="50" height="44" fill="none" stroke="#2f3843"/><text x="1227" y="738" text-anchor="middle" fill="#7d858f">1</text>
+<rect x="1264" y="710" width="50" height="44" fill="#111821" stroke="#ece6da"/><text x="1289" y="738" text-anchor="middle" fill="#ece6da">2</text>
+<rect x="1326" y="710" width="50" height="44" fill="none" stroke="#2f3843"/><text x="1351" y="738" text-anchor="middle" fill="#7d858f">3</text>
+<rect x="1388" y="710" width="50" height="44" fill="none" stroke="#2f3843"/><text x="1413" y="738" text-anchor="middle" fill="#7d858f">›</text>
+</g>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18" fill="#7d858f" letter-spacing="3"><text x="64" y="944">BUILD/04  DATA MODEL + ACCESS LAYER</text><text x="1536" y="944" text-anchor="end">FIG. 03.4</text></g>
+<path d="M64 908H1536" stroke="#1c242e"/>
+</svg>

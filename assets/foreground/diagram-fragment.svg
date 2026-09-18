@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640"><g fill="none" stroke="#3a4652" stroke-width="1.2">
+<circle cx="320" cy="320" r="220"/><circle cx="320" cy="320" r="150" stroke-dasharray="3 8"/><circle cx="320" cy="320" r="60"/>
+<path d="M60 320H580M320 60V580"/><path d="M165 165L475 475M475 165L165 475" stroke-opacity="0.5" stroke-dasharray="2 10"/>
+<path d="M100 600H540M100 590v20M540 590v20" /><path d="M20 100V540M10 100h20M10 540h20"/>
+<path d="M540.0 320.0L556.0 320.0"/>
+<path d="M536.7 358.2L544.5 359.6"/>
+<path d="M526.7 395.2L534.2 398.0"/>
+<path d="M510.5 430.0L524.4 438.0"/>
+<path d="M488.5 461.4L494.7 466.6"/>
+<path d="M461.4 488.5L466.6 494.7"/>
+<path d="M430.0 510.5L438.0 524.4"/>
+<path d="M395.2 526.7L398.0 534.2"/>
+<path d="M358.2 536.7L359.6 544.5"/>
+<path d="M320.0 540.0L320.0 556.0"/>
+<path d="M281.8 536.7L280.4 544.5"/>
+<path d="M244.8 526.7L242.0 534.2"/>
+<path d="M210.0 510.5L202.0 524.4"/>
+<path d="M178.6 488.5L173.4 494.7"/>
+<path d="M151.5 461.4L145.3 466.6"/>
+<path d="M129.5 430.0L115.6 438.0"/>
+<path d="M113.3 395.2L105.8 398.0"/>
+<path d="M103.3 358.2L95.5 359.6"/>
+<path d="M100.0 320.0L84.0 320.0"/>
+<path d="M103.3 281.8L95.5 280.4"/>
+<path d="M113.3 244.8L105.8 242.0"/>
+<path d="M129.5 210.0L115.6 202.0"/>
+<path d="M151.5 178.6L145.3 173.4"/>
+<path d="M178.6 151.5L173.4 145.3"/>
+<path d="M210.0 129.5L202.0 115.6"/>
+<path d="M244.8 113.3L242.0 105.8"/>
+<path d="M281.8 103.3L280.4 95.5"/>
+<path d="M320.0 100.0L320.0 84.0"/>
+<path d="M358.2 103.3L359.6 95.5"/>
+<path d="M395.2 113.3L398.0 105.8"/>
+<path d="M430.0 129.5L438.0 115.6"/>
+<path d="M461.4 151.5L466.6 145.3"/>
+<path d="M488.5 178.6L494.7 173.4"/>
+<path d="M510.5 210.0L524.4 202.0"/>
+<path d="M526.7 244.8L534.2 242.0"/>
+<path d="M536.7 281.8L544.5 280.4"/>
+</g><path d="M320 320L456 206" stroke="#6cd3e0" stroke-width="1.5"/><circle cx="456" cy="206" r="5" fill="#6cd3e0"/>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4f5a66" letter-spacing="2"><text x="320" y="628" text-anchor="middle">440.00</text><text x="36" y="324">R-220</text></g></svg>
