@@ -13,7 +13,7 @@ script.js               scroll story, reveals, nav, mobile menu, case files, cur
 assets/js/world.js      Three.js world (morphing particle core, data ocean, quality tiers)
 assets/vendor/three/    three.js r186 (MIT), vendored
 assets/fonts/           Archivo + Martian Mono variable fonts (OFL), self-hosted
-assets/projects/        procedural SVG visuals for the four builds
+assets/projects/        procedural SVG visuals for the five builds
 assets/icons/           favicon (SVG + PNG), apple-touch icon
 assets/images/          og-image.png (1200×630 social preview)
 ```
@@ -30,7 +30,7 @@ These appear in the Contact section, the footer and the JSON-LD `sameAs` list in
 
 ## Projects
 
-The Builds chapter shows four projects, each linked to its repository:
+The Builds chapter shows five projects, each linked to its repository:
 
 | # | Project | Repository |
 | --- | --- | --- |
@@ -38,8 +38,9 @@ The Builds chapter shows four projects, each linked to its repository:
 | 02 | AEGIS | https://github.com/Mohith1-stack/Aegis-LLC |
 | 03 | TraceSieve | https://github.com/Mohith1-stack/TraceSieve |
 | 04 | SkillBridge AI | https://github.com/Mohith1-stack/AI-Powered-Freelance-Marketplace |
+| 05 | Log Processing Engine | https://github.com/Mohith1-stack/Log-Processing-Engine |
 
-Their descriptions are written from each repository's README. To add a fifth project, copy one `<article class="build">` block, give it the next id (`build-05`) and add a matching SVG in `assets/projects/`. The page layout alternates automatically.
+Their descriptions are written from each project's available documentation. To add another project, copy one `<article class="build">` block, give it the next id and add a matching SVG in `assets/projects/`. The page layout alternates automatically.
 
 ## Deploy to GitHub Pages
 

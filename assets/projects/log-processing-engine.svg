@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs>
+  <radialGradient id="v" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#111a20"/><stop offset="1" stop-color="#05070a"/></radialGradient>
+  <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#111821" stroke-width="1"/></pattern>
+</defs>
+<rect width="1600" height="1000" fill="url(#v)"/><rect width="1600" height="1000" fill="url(#g)"/>
+<text x="110" y="110" fill="#7d858f" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="3">SPEED DEMON 2026 / LOG PROCESSING ENGINE</text>
+<text x="110" y="184" fill="#ece6da" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="34">RAW EVENTS → STRUCTURED OUTPUT</text>
+<rect x="110" y="232" width="500" height="450" fill="#090d12" stroke="#26303a"/>
+<text x="142" y="280" fill="#7d858f" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2">INPUT / LOG STREAM</text>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="17">
+  <text x="142" y="340" fill="#69727d">[00:00:01.204]</text><text x="330" y="340" fill="#5cc39b">INFO</text><text x="397" y="340" fill="#c4c9cd">request started</text>
+  <text x="142" y="394" fill="#69727d">[00:00:01.219]</text><text x="330" y="394" fill="#e4b363">WARN</text><text x="405" y="394" fill="#c4c9cd">retry scheduled</text>
+  <text x="142" y="448" fill="#69727d">[00:00:01.244]</text><text x="330" y="448" fill="#e2584c">ERROR</text><text x="416" y="448" fill="#c4c9cd">connection timeout</text>
+  <text x="142" y="502" fill="#69727d">[00:00:01.251]</text><text x="330" y="502" fill="#5cc39b">INFO</text><text x="397" y="502" fill="#c4c9cd">worker recovered</text>
+  <text x="142" y="556" fill="#69727d">[00:00:01.288]</text><text x="330" y="556" fill="#5cc39b">INFO</text><text x="397" y="556" fill="#c4c9cd">batch complete</text>
+</g>
+<path d="M625 455H756" fill="none" stroke="#6cd3e0" stroke-width="3"/><path d="m742 441 16 14-16 14" fill="none" stroke="#6cd3e0" stroke-width="3"/>
+<rect x="780" y="232" width="710" height="450" fill="#090d12" stroke="#26303a"/>
+<text x="818" y="280" fill="#7d858f" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2">PYTHON ENGINE / TRACK A</text>
+<rect x="818" y="312" width="634" height="68" fill="#0e151b" stroke="#25313b"/><circle cx="850" cy="346" r="6" fill="#6cd3e0"/>
+<text x="872" y="352" fill="#ece6da" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="19">parse → process → emit</text>
+<text x="818" y="432" fill="#7d858f" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2">THROUGHPUT TRACE</text>
+<path d="M820 600H1452M820 548H1452M820 496H1452" stroke="#202a33" stroke-width="1"/>
+<path d="M820 590 884 579 944 584 1002 535 1062 546 1120 498 1182 516 1240 468 1302 485 1360 437 1452 448" fill="none" stroke="#6cd3e0" stroke-width="4"/>
+<path d="M820 590 884 579 944 584 1002 535 1062 546 1120 498 1182 516 1240 468 1302 485 1360 437 1452 448V600H820Z" fill="#6cd3e0" opacity=".08"/>
+<text x="818" y="640" fill="#69727d" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14">OPTIMIZATION IN PROGRESS</text>
+<text x="110" y="760" fill="#7d858f" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2">FOUR TRACKS / ONE CHALLENGE</text>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="17">
+  <rect x="110" y="800" width="320" height="92" fill="#0b1116" stroke="#27313a"/><text x="138" y="838" fill="#6cd3e0">TRACK A</text><text x="138" y="868" fill="#ece6da">OPTIMIZED ENGINE</text>
+  <rect x="464" y="800" width="320" height="92" fill="#0b1116" stroke="#27313a"/><text x="492" y="838" fill="#7d858f">TRACK B</text><text x="492" y="868" fill="#69727d">PROCESSING PATH</text>
+  <rect x="818" y="800" width="320" height="92" fill="#0b1116" stroke="#27313a"/><text x="846" y="838" fill="#7d858f">TRACK C</text><text x="846" y="868" fill="#69727d">PROCESSING PATH</text>
+  <rect x="1172" y="800" width="320" height="92" fill="#0b1116" stroke="#27313a"/><text x="1200" y="838" fill="#7d858f">TRACK D</text><text x="1200" y="868" fill="#69727d">PROCESSING PATH</text>
+</g>
+</svg>
