@@ -686,6 +686,10 @@ function init() {
   function applyScene(dt, targetC, immediate) {
     // scroll → world perfectly in sync
     cur = targetC;
+    const stackHandoff = !reduced && cur >= 3 && cur < 3.2
+      ? smootherstep(clamp((cur - 3) / 0.2, 0, 1))
+      : 0;
+    const transitionPulse = Math.sin(stackHandoff * Math.PI);
     const e = ease(clamp(reduced ? cur : sceneProgress(cur), 0, N - 1));
     sampleShot(e);
 
@@ -710,13 +714,13 @@ function init() {
     pe[9] = -(shot.sy + portrait * 0.12);
 
     spinAngle += dt * shot.spin * motion;
-    core.rotation.y = spinAngle;
-    core.scale.setScalar(shot.scale);
+    core.rotation.y = spinAngle + stackHandoff * Math.PI * 2;
+    core.scale.setScalar(shot.scale * (1 + transitionPulse * 0.12));
     stars.rotation.y = time * 0.004;
 
     coreMat.uniforms.uMorph.value = e;
     coreMat.uniforms.uTime.value = time;
-    coreMat.uniforms.uBright.value = shot.bright * lerp(1, 0.95, portrait);
+    coreMat.uniforms.uBright.value = shot.bright * lerp(1, 0.95, portrait) * (1 + transitionPulse * 0.4);
     if (!reduced) coreMat.uniforms.uIntro.value = clamp((performance.now() - bootTime - 250) / 2600, 0, 1);
 
     // stack plates follow the group being read
@@ -731,7 +735,7 @@ function init() {
     coreMat.uniforms.uMile.value = mileActive;
 
     oceanMat.uniforms.uTime.value = time;
-    oceanMat.uniforms.uBright.value = shot.ocean;
+    oceanMat.uniforms.uBright.value = shot.ocean * (1 + transitionPulse * 0.2);
     oceanMat.uniforms.uColA.value.copy(shot.oceanA);
     oceanMat.uniforms.uColB.value.copy(shot.oceanB);
     starMat.uniforms.uTime.value = time;
