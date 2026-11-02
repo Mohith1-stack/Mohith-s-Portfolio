@@ -674,10 +674,19 @@ function init() {
     return typeof state.progressAt === 'function' ? state.progressAt() : (state.c || 0);
   }
 
+  function sceneProgress(c) {
+    // Keep the Builds composition steady no matter how tall its project list gets.
+    // Blend into Stack after the Builds chapter reaches its end anchor.
+    if (c >= 2 && c < 3) return 2;
+    if (c >= 3 && c < 3.2) return 2 + smootherstep(clamp((c - 3) / 0.2, 0, 1));
+    if (c >= 3.2 && c < 4) return 3 + (c - 3.2) / 0.8;
+    return c;
+  }
+
   function applyScene(dt, targetC, immediate) {
     // scroll → world perfectly in sync
     cur = targetC;
-    const e = ease(clamp(cur, 0, N - 1));
+    const e = ease(clamp(reduced ? cur : sceneProgress(cur), 0, N - 1));
     sampleShot(e);
 
     const motion = reduced ? 0 : 1;
