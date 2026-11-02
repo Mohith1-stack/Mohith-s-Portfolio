@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs>
+  <radialGradient id="v" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#111a20"/><stop offset="1" stop-color="#05070a"/></radialGradient>
+  <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#111821" stroke-width="1"/></pattern>
+</defs>
+<rect width="1600" height="1000" fill="url(#v)"/><rect width="1600" height="1000" fill="url(#g)"/>
+<text x="110" y="110" fill="#7d858f" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16" letter-spacing="3">KILN-CODE / DETOX COMMUNITY</text>
+<text x="110" y="184" fill="#ece6da" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="34">PRACTICE. SOLVE. GROW.</text>
+<rect x="110" y="232" width="430" height="620" fill="#090d12" stroke="#26303a"/>
+<text x="144" y="282" fill="#7d858f" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2">CHALLENGE BOARD</text>
+<rect x="140" y="318" width="370" height="112" fill="#10171d" stroke="#6cd3e0"/>
+<text x="168" y="359" fill="#6cd3e0" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14">01 / ARRAYS</text>
+<text x="168" y="396" fill="#ece6da" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="20">Pair Sum</text>
+<text x="168" y="416" fill="#7d858f" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12">EASY · PRACTICE</text>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16">
+  <rect x="140" y="454" width="370" height="80" fill="#0b1116" stroke="#26303a"/>
+  <text x="168" y="490" fill="#7d858f">02 / STRINGS</text><text x="168" y="515" fill="#c4c9cd">Reverse Words</text>
+  <rect x="140" y="552" width="370" height="80" fill="#0b1116" stroke="#26303a"/>
+  <text x="168" y="588" fill="#7d858f">03 / GRAPHS</text><text x="168" y="613" fill="#c4c9cd">Connected Paths</text>
+  <rect x="140" y="650" width="370" height="80" fill="#0b1116" stroke="#26303a"/>
+  <text x="168" y="686" fill="#7d858f">04 / DYNAMIC</text><text x="168" y="711" fill="#c4c9cd">Step Counter</text>
+</g>
+<rect x="572" y="232" width="918" height="390" fill="#090d12" stroke="#26303a"/>
+<text x="610" y="282" fill="#7d858f" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2">EDITOR / PAIR SUM</text>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="20">
+  <text x="620" y="354" fill="#4a525c">01</text><text x="680" y="354" fill="#c792ea">def</text><text x="725" y="354" fill="#82aaff">pair_sum</text><text x="830" y="354" fill="#ece6da">(values, target):</text>
+  <text x="620" y="402" fill="#4a525c">02</text><text x="710" y="402" fill="#c4c9cd">seen = {}</text>
+  <text x="620" y="450" fill="#4a525c">03</text><text x="710" y="450" fill="#c792ea">for</text><text x="755" y="450" fill="#c4c9cd">index, value</text><text x="900" y="450" fill="#c792ea">in</text><text x="928" y="450" fill="#82aaff">enumerate</text><text x="1036" y="450" fill="#ece6da">(values):</text>
+  <text x="620" y="498" fill="#4a525c">04</text><text x="740" y="498" fill="#c792ea">if</text><text x="778" y="498" fill="#c4c9cd">target - value</text><text x="940" y="498" fill="#c792ea">in</text><text x="976" y="498" fill="#c4c9cd">seen:</text>
+  <text x="620" y="546" fill="#4a525c">05</text><text x="770" y="546" fill="#c792ea">return</text><text x="845" y="546" fill="#c4c9cd">seen[target - value], index</text>
+</g>
+<rect x="572" y="654" width="918" height="198" fill="#090d12" stroke="#26303a"/>
+<text x="610" y="700" fill="#7d858f" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" letter-spacing="2">COMMUNITY / PROGRESS</text>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="16">
+  <text x="610" y="752" fill="#6cd3e0">MEMBER</text><text x="1110" y="752" fill="#6cd3e0">SOLVED</text><text x="1280" y="752" fill="#6cd3e0">STREAK</text>
+  <path d="M610 768H1450" stroke="#26303a"/>
+  <text x="610" y="804" fill="#ece6da">DETOX / member_01</text><text x="1138" y="804" fill="#ece6da">24</text><text x="1304" y="804" fill="#e4b363">07 days</text>
+  <text x="610" y="838" fill="#7d858f">DETOX / member_02</text><text x="1138" y="838" fill="#c4c9cd">18</text><text x="1304" y="838" fill="#7d858f">04 days</text>
+</g>
+<text x="110" y="926" fill="#69727d" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="14" letter-spacing="2">A COMMUNITY SPACE FOR CODING PRACTICE AND CHALLENGES</text>
+</svg>
