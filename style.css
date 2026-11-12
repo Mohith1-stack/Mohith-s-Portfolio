@@ -1096,6 +1096,22 @@ main :is(p, li, dd, dt, small, figcaption, .meta, .label),
   .timeline::before, .timeline::after { left: 1.125rem; }
 }
 
+@media (min-width: 381px) and (max-width: 520px) {
+  .hero__title { font-size: clamp(3.5rem, 18vw, 5.6rem); }
+  .build__meta { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .group__head { grid-template-columns: 2.75rem minmax(0, 1fr) auto; }
+  .contact__email { max-width: 100%; font-size: clamp(1.3rem, 6.2vw, 1.8rem); }
+}
+
+@media (max-width: 767px) and (max-height: 740px) {
+  .hero { padding-top: calc(var(--header-h) + 1rem); }
+  .hero__main { padding-block: 1.25rem; }
+  .hero__title { font-size: clamp(3rem, 18vw, 5rem); }
+  .hero__role { margin-top: 1rem; }
+  .hero__foot { gap: 1rem; padding-top: 1rem; }
+  .facts { gap: 0.35rem; }
+}
+
 /* ---------- reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

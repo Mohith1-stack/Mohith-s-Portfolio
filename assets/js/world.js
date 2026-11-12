@@ -84,8 +84,8 @@ function detectQuality() {
 
 const PRESETS = {
   high:   { dpr: 1.5,  core: 18000, oceanStep: 1.35, stars: 2400 },
-  medium: { dpr: 1.25, core: 12000, oceanStep: 1.8,  stars: 1600 },
-  low:    { dpr: 1.0,  core: 6500,  oceanStep: 2.6,  stars: 800 }
+  medium: { dpr: 1.1, core: 10000, oceanStep: 2.1,  stars: 1200 },
+  low:    { dpr: 0.9,  core: 5200,  oceanStep: 3.0,  stars: 600 }
 };
 
 /* palette, indexed from the shaders */
@@ -546,6 +546,7 @@ const skyFragment = /* glsl */`
 function init() {
   const quality = detectQuality();
   const P = PRESETS[quality];
+  const frameInterval = matchMedia('(pointer: coarse)').matches ? 1000 / 40 : 0;
   const saveData = !!(navigator.connection && navigator.connection.saveData);
   let reduced = mqReduced.matches || saveData;
   let dprNow = Math.min(window.devicePixelRatio || 1, P.dpr);
@@ -793,7 +794,7 @@ function init() {
       if (deltas.length >= 90) {
         deltas.sort((a, b) => a - b);
         const hz = 1000 / deltas[45];
-        targetHz = Math.max(60, [60, 75, 90, 100, 120, 144, 165, 240].reduce((best, v) => (Math.abs(v - hz) < Math.abs(best - hz) ? v : best), 60));
+        targetHz = [30, 40, 45, 60, 75, 90, 100, 120, 144, 165, 240].reduce((best, v) => (Math.abs(v - hz) < Math.abs(best - hz) ? v : best), 60);
       }
       return;
     }
@@ -807,6 +808,7 @@ function init() {
   let skip = false;
   function frame(now) {
     raf = requestAnimationFrame(frame);
+    if (frameInterval && now - last < frameInterval) return;
     const ms = now - last;
     // a case file is open: nothing to watch behind it, spend the GPU on the dialog
     if (root.classList.contains('dialog-open')) { skip = !skip; if (skip) return; }
