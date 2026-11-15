@@ -89,6 +89,8 @@ Then open `http://localhost:8080/`.
 
 A wave-driven "data ocean" of points, a star field and a per-chapter sky gradient sit behind it. Each form holds still while its chapter is read and re-forms on the way to the next one. Camera framings, sky colours and brightness for each chapter live in the `SHOTS` array at the top of `world.js`.
 
+The same scene adapts to small screens: phones use a low particle and resolution budget, tablets use a separate medium budget and wider camera framing, and coarse-pointer displays cap rendering to reduce GPU work. The camera reframes again when the device changes orientation.
+
 ## Performance and quality
 
 - The whole world is 4 draw calls per frame: sky, stars, ocean and core. There are no textures, lights or post-processing, and all motion runs in vertex shaders, so JavaScript only updates a few uniforms per frame.

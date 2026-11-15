@@ -329,10 +329,8 @@ ol, ul { padding: 0; list-style: none; }
   transform-origin: top; transform: scaleY(0);
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  :root { --rail-space: 2.25rem; }
-  .rail__tick { display: none; }
-  .rail__progress { display: none; }
-  .rail a { min-height: 28px; }
+  :root { --rail-space: 0px; --gutter: clamp(1.5rem, 4vw, 2.5rem); }
+  .rail { display: none; }
 }
 
 /* ---------- chapters ---------- */
@@ -1022,6 +1020,27 @@ main :is(p, li, dd, dt, small, figcaption, .meta, .label),
   .case__visual { border-right: 0; border-bottom: 1px solid var(--rule); aspect-ratio: 16 / 10; }
 
   .site-footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .chapter { padding-top: 7rem; padding-bottom: 5rem; }
+  .title, .builds .title, .stack .title, .journey .title { font-size: clamp(3.5rem, 8.5vw, 5.8rem); }
+  .hero { padding-top: calc(var(--header-h) + 2rem); }
+  .hero__title { font-size: clamp(5rem, 12vw, 8.5rem); }
+  .hero__line--offset { padding-left: clamp(2rem, 8vw, 5rem); }
+  .hero__role { padding-left: clamp(2rem, 8vw, 5rem); }
+  .contact__title { font-size: clamp(4rem, 8vw, 6.25rem); }
+  .contact__line:nth-child(2) { padding-left: clamp(1rem, 4vw, 3rem); }
+  .contact__line:nth-child(3) { padding-left: clamp(2rem, 8vw, 5rem); }
+  .layers { max-width: 560px; }
+  .case { width: min(54rem, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem); }
+}
+
+@media (min-width: 1024px) and (max-width: 1080px) {
+  :root { --rail-space: 0px; --gutter: 2rem; }
+  .primary-nav { display: none; }
+  .menu-toggle { display: inline-flex; }
+  .rail { display: none; }
 }
 
 @media (max-width: 767px) {

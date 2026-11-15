@@ -72,12 +72,13 @@ function webgl2Available() {
 
 function detectQuality() {
   const forced = new URLSearchParams(location.search).get('quality');
-  if (forced === 'high' || forced === 'medium' || forced === 'low') return forced;
+  if (forced === 'high' || forced === 'medium' || forced === 'tablet' || forced === 'low') return forced;
   const coarse = matchMedia('(pointer: coarse)').matches;
   const mem = navigator.deviceMemory || 8;
   const cores = navigator.hardwareConcurrency || 8;
   const w = window.innerWidth;
   if (mem <= 3 || w < 640 || (coarse && cores <= 4)) return 'low';
+  if (coarse && w < 1100) return 'tablet';
   if (coarse || w < 1100 || mem <= 4 || cores <= 4) return 'medium';
   return 'high';
 }
@@ -85,6 +86,7 @@ function detectQuality() {
 const PRESETS = {
   high:   { dpr: 1.5,  core: 18000, oceanStep: 1.35, stars: 2400 },
   medium: { dpr: 1.1, core: 10000, oceanStep: 2.1,  stars: 1200 },
+  tablet: { dpr: 1.0, core: 8000, oceanStep: 2.4,  stars: 900 },
   low:    { dpr: 0.9,  core: 5200,  oceanStep: 3.0,  stars: 600 }
 };
 
@@ -546,14 +548,15 @@ const skyFragment = /* glsl */`
 function init() {
   const quality = detectQuality();
   const P = PRESETS[quality];
-  const frameInterval = matchMedia('(pointer: coarse)').matches ? 1000 / 40 : 0;
+  const coarse = matchMedia('(pointer: coarse)').matches;
+  let frameInterval = coarse ? 1000 / (window.innerWidth < 640 ? 40 : 45) : 0;
   const saveData = !!(navigator.connection && navigator.connection.saveData);
   let reduced = mqReduced.matches || saveData;
   let dprNow = Math.min(window.devicePixelRatio || 1, P.dpr);
 
   const renderer = new THREE.WebGLRenderer({
     canvas, antialias: false, alpha: false, depth: false, stencil: false,
-    powerPreference: quality === 'low' ? 'low-power' : 'high-performance'
+    powerPreference: quality === 'high' ? 'high-performance' : 'low-power'
   });
   renderer.setPixelRatio(dprNow);
   renderer.setSize(window.innerWidth, window.innerHeight, false);
@@ -652,7 +655,7 @@ function init() {
 
   /* ---------- per-frame scene state ---------- */
   const shot = { top: new THREE.Color(), bot: new THREE.Color(), g1: new THREE.Color(), g2: new THREE.Color(), oceanA: new THREE.Color(), oceanB: new THREE.Color() };
-  let portrait = 0;
+  let portrait = 0, tabletLandscape = 0;
   let cur = 0, time = 0, spinAngle = 0, px = 0, py = 0;
   const bootTime = performance.now();
   const stackActive = new Float32Array(6), mileActive = new Float32Array(6);
@@ -704,14 +707,14 @@ function init() {
     }
 
     // camera orbit around the core
-    const dist = shot.dist * lerp(1, 1.25, portrait);
+    const dist = shot.dist * lerp(1, 1.25, portrait) * lerp(1, 1.08, tabletLandscape);
     const theta = shot.theta + px * 0.12;
     const phi = clamp(shot.phi + py * 0.06, -0.2, 1.1);
     camera.position.set(Math.sin(theta) * Math.cos(phi) * dist, shot.lookY + Math.sin(phi) * dist, Math.cos(theta) * Math.cos(phi) * dist);
     camera.lookAt(0, shot.lookY, 0);
     camera.updateMatrixWorld();
     const pe = camera.projectionMatrix.elements;
-    pe[8] = -shot.sx * lerp(1, 0.08, portrait);
+    pe[8] = -shot.sx * lerp(1, 0.08, portrait) * lerp(1, 0.72, tabletLandscape);
     pe[9] = -(shot.sy + portrait * 0.12);
 
     spinAngle += dt * shot.spin * motion;
@@ -756,12 +759,14 @@ function init() {
     // ignore mobile URL-bar height jitter; the canvas stretches via CSS meanwhile
     if (!force && coarse && w === lastW && Math.abs(h - lastH) < 160) return;
     lastW = w; lastH = h;
+    frameInterval = coarse ? 1000 / (w < 640 ? 40 : 45) : 0;
     renderer.setPixelRatio(dprNow);
     renderer.setSize(w, h, false);
     const aspect = w / h;
     portrait = clamp((1.15 - aspect) * 1.6, 0, 1);
+    tabletLandscape = coarse && aspect >= 1.0 ? clamp((1.65 - aspect) * 1.4, 0, 0.9) : 0;
     camera.aspect = aspect;
-    camera.fov = lerp(42, 58, portrait);
+    camera.fov = lerp(42, 58, portrait) + tabletLandscape * 4;
     camera.updateProjectionMatrix();
     const scale = (h * renderer.getPixelRatio()) / (2 * Math.tan((camera.fov * D2R) / 2));
     coreMat.uniforms.uScale.value = scale;
