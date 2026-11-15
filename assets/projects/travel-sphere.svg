@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f2eee8"/><stop offset="1" stop-color="#dce8e8"/></linearGradient>
+  <linearGradient id="sea" x2="0" y2="1"><stop stop-color="#d8e8e8"/><stop offset="1" stop-color="#c1d8dc"/></linearGradient>
+  <linearGradient id="accent" x2="1"><stop stop-color="#bd5b5c"/><stop offset="1" stop-color="#963e48"/></linearGradient>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#6a8990" stroke-opacity=".12"/></pattern>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#24363c" flood-opacity=".14"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<circle cx="1390" cy="120" r="260" fill="#bd5b5c" opacity=".07"/>
+<path d="M0 730C210 640 312 803 520 725s330-140 527-69 330 127 553 26v318H0Z" fill="#809a92" opacity=".16"/>
+<path d="M0 800c184-112 327 27 510-49s310-118 491-41 362 130 599 24v266H0Z" fill="#82988d" opacity=".11"/>
+<rect width="1600" height="1000" fill="url(#grid)"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#252a30">
+  <rect x="70" y="58" width="1460" height="82" rx="24" fill="#fff" fill-opacity=".91" stroke="#fff"/>
+  <rect x="94" y="76" width="46" height="46" rx="14" fill="url(#accent)"/>
+  <path d="m117 85 4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#fff"/>
+  <text x="158" y="108" font-size="20" font-weight="700" letter-spacing="4">TRAVELSPHERE</text>
+  <g font-size="14" font-weight="600" fill="#68737b">
+    <text x="565" y="106" fill="#a3464d">HOME</text><text x="663" y="106">EXPLORE</text><text x="773" y="106">MOOD</text><text x="865" y="106">FOOD</text><text x="954" y="106">COMPARE</text><text x="1070" y="106">SEASONS</text><text x="1200" y="106">BUDGET</text>
+  </g>
+  <rect x="542" y="75" width="82" height="48" rx="15" fill="#bd5b5c" fill-opacity=".1" stroke="#bd5b5c" stroke-opacity=".25"/>
+  <text x="104" y="224" font-size="14" font-weight="700" letter-spacing="4" fill="#a3464d">THOUGHTFUL TRAVEL STARTS HERE</text>
+  <text x="100" y="340" font-size="82" font-weight="750" letter-spacing="-4">Find a place</text>
+  <text x="100" y="430" font-size="82" font-weight="750" letter-spacing="-4">that feels like</text>
+  <text x="100" y="520" font-size="82" font-weight="750" letter-spacing="-4">yours.</text>
+  <text x="104" y="582" font-size="23" fill="#67727a">Explore places through their landscapes, seasons,</text>
+  <text x="104" y="616" font-size="23" fill="#67727a">culture and cuisine. Then compare and plan your trip.</text>
+  <rect x="104" y="674" width="238" height="62" rx="16" fill="url(#accent)" filter="url(#shadow)"/>
+  <text x="129" y="713" font-size="17" font-weight="700" fill="#fff">EXPLORE DESTINATIONS  →</text>
+  <rect x="362" y="674" width="190" height="62" rx="16" fill="#fff" stroke="#d5d8d9"/>
+  <text x="391" y="713" font-size="17" font-weight="700" fill="#a3464d">BROWSE BY MOOD</text>
+</g>
+<!-- featured trip panel -->
+<g filter="url(#shadow)">
+  <rect x="790" y="190" width="690" height="660" rx="32" fill="#fff" fill-opacity=".94"/>
+  <rect x="812" y="212" width="646" height="410" rx="23" fill="url(#sea)"/>
+  <path d="M812 462c108-78 176-67 261-20 88 49 143 31 224-42 57-51 102-53 161-15v237H812Z" fill="#7b9b9b" opacity=".55"/>
+  <path d="M812 514c134-64 203-35 298-1s208 2 348-84v193H812Z" fill="#5f7776" opacity=".48"/>
+  <path d="M812 577c126-48 204-24 304 2 120 32 206-19 342-93v136H812Z" fill="#566c61" opacity=".52"/>
+  <circle cx="1302" cy="294" r="61" fill="#f4dfb0" opacity=".75"/>
+  <path d="M1188 513h186l-21-97-31-20-4-38-25-16-24 17-2 40-37 21z" fill="#252b31"/>
+  <path d="M1223 513v-54h119v54M1200 425h159M1267 362h42M1288 342v171" fill="none" stroke="#d5b886" stroke-width="7"/>
+  <path d="M1173 414h214l-31-34h-152z" fill="#30363a"/>
+  <path d="M1197 379h170l-24-19h-122z" fill="#30363a"/>
+  <path d="M1232 459h19v33h-19zm86 0h19v33h-19z" fill="#d5b886"/>
+  <circle cx="881" cy="279" r="5" fill="#fff" opacity=".8"/><circle cx="943" cy="319" r="4" fill="#fff" opacity=".7"/><circle cx="1088" cy="265" r="5" fill="#fff" opacity=".75"/>
+  <rect x="840" y="645" width="590" height="164" rx="22" fill="#fff" stroke="#ece8e2"/>
+  <text x="870" y="691" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#a3464d">FEATURED DESTINATION</text>
+  <text x="870" y="738" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#252a30">Kyoto, Japan</text>
+  <text x="870" y="778" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#67727a">Temple paths  ·  Autumn colour</text>
+  <rect x="1332" y="672" width="62" height="62" rx="18" fill="#f7eeee"/>
+  <path d="M1363 686v33m-17-16h34" stroke="#a3464d" stroke-width="3" stroke-linecap="round"/>
+</g>
+<!-- small map route / insight strip -->
+<g transform="translate(844 873)" font-family="Arial, Helvetica, sans-serif">
+  <rect width="580" height="72" rx="18" fill="#fff" fill-opacity=".84" stroke="#fff"/>
+  <path d="M25 48c50-36 73 20 116-14s63-18 101-1" fill="none" stroke="#bd5b5c" stroke-width="3" stroke-dasharray="7 7"/>
+  <circle cx="25" cy="48" r="7" fill="#a3464d"/><circle cx="242" cy="33" r="7" fill="#6c9d9b"/>
+  <text x="273" y="32" font-size="12" font-weight="700" letter-spacing="2" fill="#a3464d">DISCOVER · COMPARE · PLAN</text>
+  <text x="273" y="53" font-size="14" fill="#68737b">One companion for your next journey</text>
+</g>
+</svg>
